@@ -1,0 +1,12 @@
+<h1> hello and welcome</h1>
+
+<%= 'Hi Marco' if @user == "Marco" %>
+
+<% if @admin %>
+  <%= "here is the link to the secret files" %>
+<% end %>
+
+<a href=/about>about <%= @user %></a>
+
+<br>
+<a href=/current_time>Time</a>
