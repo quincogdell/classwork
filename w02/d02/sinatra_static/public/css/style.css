@@ -1,0 +1,29 @@
+/*css selector*/
+/*tag selector */
+body {
+  color: red;
+}
+h1 {
+  color: black;
+}
+
+.sale {
+background-color: yellow;
+border: 1px solid green;
+color: black;
+width: 400px;
+}
+
+.cube {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+
+.red {
+  background-color: red;
+}
+
+.success {
+  background-color: green;
+}
