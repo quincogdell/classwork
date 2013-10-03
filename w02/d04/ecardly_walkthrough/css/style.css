@@ -1,0 +1,117 @@
+/*
+Project Name: Ecard.ly
+Client: General Assembly
+Author: Alicia Lauerman | @tealtail
+Developer in Residence @GA in NYC
+Credit for Original Exercise: Christopher Castig | @castig
+*/
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+* Box-sizing: Border-box FTW
+* Apply a natural box layout model to all elements
+* http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .clearfix:before,
+ .clearfix:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+
+ .clearfix:after {
+     clear: both;
+ }
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/* ==========================================================================
+   Global Ecardly Styles
+   ========================================================================== */
+
+html {
+     background: #D6D6D6;
+     font: 12px/1.7 sans-serif;
+}
+
+a {
+     color: #ff3300;
+     font-weight: bold;
+     text-decoration: none;
+}
+
+/* ==========================================================================
+   Sections
+   ========================================================================== */
+
+.container {
+     width: 940px;
+     margin: 0 auto;
+}
+
+/*
+* Main
+*/
+
+.main {
+     width: 640px;
+}
+
+/*
+* Sidebar
+*/
+
+.secondary {
+     width: 280px;
+}
+
+/* ==========================================================================
+   Elements/Modules
+   ========================================================================== */
+
+/*
+* Sidebar Links
+*/
+
+/*
+ * Ads
+ */
+
+/*
+* Posts
+*/
+
+

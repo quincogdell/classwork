@@ -1,0 +1,35 @@
+.flag {
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.blood {
+  background-color: red;
+
+}
+
+.sweat {
+  background-color: white;
+
+}
+
+.tears {
+  background-color: blue;
+}
+
+.horizontal-band {
+  width: 100%;
+  height: 33.33%;
+}
+
+.vertical-band {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+}
+
+.ikea {
+  background-color: yellow;
+}

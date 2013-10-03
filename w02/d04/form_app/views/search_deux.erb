@@ -1,0 +1,19 @@
+<h1>Search Deux</h1>
+<form>
+  <label>First Name</label>
+  <input type="text" name='first_name' placeholder='George'>
+  <label>Last Name</label>
+  <input type="text" name='last_name' placeholder='Washington'>
+  <input type="submit" value="Search">
+</form>
+
+<% if @first_name.nil? || @last_name.nil? %>
+  <p>search for some stuff</p>
+<% else %>
+  <h1>"You searched for:"</h1>
+  <ul>
+    <li><%= @first_name  %></li>
+    <li><%= @last_name  %></li>
+  </ul>
+<% end %>
+

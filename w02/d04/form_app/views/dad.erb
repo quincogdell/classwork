@@ -1,0 +1,8 @@
+<h1>Here are some things about my dad</h1>
+<img src="<%= @image_url %>"
+
+<ul>
+  <% @info.each do |fact| %>
+  <li><%=fact %></li>
+  <% end %>
+</ul>

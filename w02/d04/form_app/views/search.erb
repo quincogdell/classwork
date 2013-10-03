@@ -1,0 +1,15 @@
+<h1>Search</h1>
+<form>
+  <input type="text" name='query' placeholder='Search'>
+  <input type="submit" value="Search">
+</form>
+
+<% if @results.nil? %>
+  <p>search for some stuff</p>
+<% else %>
+  <h1>"You searched for:"</h1>
+  <ul>
+    <li><%= @results  %></li>
+  </ul>
+<% end %>
+
