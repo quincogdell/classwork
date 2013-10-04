@@ -1,0 +1,12 @@
+<h1>Meow</h1>
+<ul>
+<% @kittens.each_with_index do |kitten, index| %>
+  <li><a href="/kittens/<%= index %>"><%= kitten %></a></li>
+
+  <% end %>
+</ul>
+
+<form action="/kittens" method="post">
+  <input type="text" name="kitten_name">
+  <input type="submit" value="make">
+</form>

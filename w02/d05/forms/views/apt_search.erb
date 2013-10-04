@@ -1,0 +1,46 @@
+<h1>Alicia's List!</h1>
+<form action="/apt_results" method="get">
+  <h2>What are you looking for?</h2>
+  <label for="roomate">Room</label>
+  <input type="radio" name="room" value="room" id="room">
+
+  <label for="no_roomate">Roomate</label>
+  <input type="radio" name="room" value="roomate" id="roomate"><br>
+
+
+  <h3>Location</h3>
+  <label for="manhattan">Manhattan</label>
+  <input type="checkbox" name="location[]" value="mn" id="manhattan"><br>
+
+  <label for="brooklyn">Brooklyn</label>
+  <input type="checkbox" name="location[]" value="bk" id="brooklyn"><br>
+
+  <label for="queens">Queens</label>
+  <input type="checkbox" name="location[]" value="qn" id="queens"><br>
+
+  <label for="staten_island">Staten Island</label>
+  <input type="checkbox" name="location[]" value="si" id="staten_island"><br>
+
+  <h2>Radius</h2>
+  <select name="radius">
+    <option value="5">5 miles</option>
+    <option value="10">10 miles</option>
+    <option value="20">20 miles</option>
+  </select>
+
+  <input type="submit" value="Search">
+</form>
+
+
+
+<!--
+#Alicia's LIst!
+# display a form
+are you searching for a room or a roommate
+checkboxes for location (manhattan, brooklyn, queens, bronx, staten island)
+select box for (5 miles, 10 miles or 20 miles)
+picture checkbox
+submit button
+
+go to a new path
+that says "you're looking for a roommate within 5 miles of brooklyn with a picture" -->
