@@ -1,0 +1,74 @@
+desc 'says hello'
+task :hello do
+  print "hello"
+end
+
+
+desc 'grap attention'
+task :kick_hash => [:boistrousness, :hello]  do
+  puts ', clap once if you can hear me'
+end
+
+task :boistrousness do
+  puts 'rah rah rah rah!'
+end
+
+
+task :make_folder do
+  mkdir 'new_dir' unless Dir.exists?('new_dir')
+end
+
+
+task :make_file do
+  touch 'new_dir/robots.txt'
+end
+
+task :write_to_file do
+  puts "Writing to file..."
+  file = File.open('new_dir/robots.txt', 'w')
+  file.puts "I AM A ROBOT"
+  file.close
+end
+
+
+namespace :homework do
+  task :create_my_folder do
+    mkdir 'quin_cogdell' unless Dir.exists?('quin_cogdell')
+  end
+
+  task :create_readme do
+    touch 'quin_cogdell/readme.md'
+  end
+
+  task :write_readme do
+    file = File.open('quin_cogdell/readme.md', 'w')
+    file.puts "Quin Cogdell"
+    file.close
+  end
+
+  task :prepare => [ :create_my_folder, :create_readme, :write_readme] do
+    puts "Ready for HW!"
+  end
+end
+
+
+namespace :school do
+  task :work do
+    puts "I'm learning maths!"
+  end
+end
+
+namespace :home do
+  task :work do
+    puts "I'm making bed!"
+  end
+end
+
+namespace :office do
+  task :work do
+    puts "I'm on facebook"
+  end
+end
+
+
+task :default => 'homework:prepare'
