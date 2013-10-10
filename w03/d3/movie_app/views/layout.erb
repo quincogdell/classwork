@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <title>Quin's Movie app</title>
+</head>
+<body>
+  <header>
+    <nav>
+
+      <a href="/favorites">Favorites</a>
+
+    </nav>
+  </header>
+
+  <div>
+
+    <section class="search">
+
+        <form action="/movies/results" method="get">
+          <input type="text" name="query" id='query' placeholder='Search Movies'>
+          <input type="submit" value="Search">
+        </form>
+    </section>
+
+  <%= yield %>
+  </div>
+</body>
+</html>

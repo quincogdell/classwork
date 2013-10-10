@@ -1,0 +1,13 @@
+.search {
+background: url("../img/film_roll.jpeg") no-repeat top left;
+height: 500px;
+width: 800px;
+margin: 0 auto;
+
+}
+
+form {
+  margin: 0 auto;
+  width: 200px;
+
+}
