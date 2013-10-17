@@ -1,0 +1,12 @@
+<h1>Courses</h1>
+
+<%= link_to('New Course', '/courses/new') %>
+
+
+<% @courses.each do |course| %>
+  <ul>
+    <li><%= course.name %></li>
+     <li> <%= course.students.map {|student| student.name }.join(", ") %> </li>
+  </ul>
+  <% end %>
+

@@ -1,0 +1,20 @@
+<h1>New Student</h1>
+
+<%= form_tag('/students') do %>
+ <%= text_field_tag 'name', nil, :placeholder => 'enter a name' %>
+ <%= submit_tag 'make a new student' %>
+<% end %>
+
+<%= form_for(@student) do |f| %>
+  <%= f.text_field :name, :placeholder => 'student name' %>
+  <select name="student[house_id]">
+    <% House.all.each do |house| %>
+    <option value=<%= house.id %>>
+      <%= house.name %>
+    </option>
+    <% end %>
+  </select>
+  <%= f.submit %>
+<% end %>
+
+

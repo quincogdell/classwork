@@ -1,0 +1,7 @@
+<h1>Students</h1>
+
+<%= link_to('New Student', '/students/new') %>
+
+<% @students.each do |student| %>
+  <%= student.name %>
+  <% end %>
