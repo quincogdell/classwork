@@ -1,0 +1,12 @@
+<h2>New Programmer</h2>
+
+<%= form_tag "/programmers" do %>
+  <%= text_field_tag 'name', nil, placeholder: 'Name' %>
+  <%= text_field_tag 'twitter_username', nil, placeholder: 'Twitter Username' %>
+  <%= text_field_tag 'twiter_pic_url', nil, placeholder: 'Twitter Pic URL' %>
+  <%= text_field_tag 'github_username', nil, placeholder: 'Github Username' %>
+  <%= submit_tag 'Create' %>
+
+
+<% end %>
+

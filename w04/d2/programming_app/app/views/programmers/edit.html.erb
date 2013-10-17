@@ -1,0 +1,12 @@
+<% result = @results %>
+
+<%= form_tag "/programmers/#{result.id}" do %>
+  <%= text_field_tag 'name', result.name, placeholder:'Name' %>
+  <%= text_field_tag 'twitter_username', result.twitter_username, placeholder:'Twitter Username' %>
+  <%= text_field_tag 'twitter_pic_url', result.twitter_pic_url, placeholder:'Twitter Pic' %>
+  <%= text_field_tag 'github_username', result.github_username, placeholder:'Github Username' %>
+  <%= submit_tag 'Update' %>
+<% end %>
+
+
+</form>
