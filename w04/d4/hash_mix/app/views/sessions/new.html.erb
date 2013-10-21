@@ -1,0 +1,12 @@
+<!-- this is where I login, email and password, => create  -->
+<!-- Note that i am using a form_tag because there is a no model backing my resource  -->
+
+<h1>Login</h1>
+
+<section>
+  <%= form_tag "/sessions" do %>
+    <%= text_field_tag :email, nil, placeholder: 'Email' %>
+    <%= password_field_tag :password, nil, placeholder: 'Password' %>
+    <%= submit_tag 'Sign In'%>
+  <% end %>
+</section>

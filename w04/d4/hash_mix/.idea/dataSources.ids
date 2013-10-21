@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails hash_mix: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="5395e892-66df-4386-ab52-78a4f5836e82">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql://127.0.0.1/&lt;%= File.basename(Rails.root) %&gt;_development</jdbc-url>
+    <user-name>&lt;%= ENV[&apos;PG_USERNAME&apos;] %&gt;</user-name>
+    <libraries/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails hash_mix: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="0244cf9a-7f50-4bbe-9e4e-3fb5ee0e5065">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:&lt;%= File.basename(Rails.root) %&gt;_production</jdbc-url>
+    <user-name>&lt;%= ENV[&apos;PG_USERNAME&apos;] %&gt;</user-name>
+    <libraries/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails hash_mix: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="ac528741-b160-4cb0-b0bf-5f6584a91033">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql://127.0.0.1/&lt;%= File.basename(Rails.root) %&gt;_test</jdbc-url>
+    <user-name>&lt;%= ENV[&apos;PG_USERNAME&apos;] %&gt;</user-name>
+    <libraries/>
+  </data-source>
+</component>
