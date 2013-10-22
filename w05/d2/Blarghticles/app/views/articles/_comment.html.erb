@@ -1,0 +1,12 @@
+
+<li>
+  <div class="comment">
+    <span class="comment-datetime">
+      <%= comment.try(:created_at) %>
+    </span>
+    <div class="comment-body">
+      <%= comment.try(:body) %>
+    </div>
+  </div>
+</li>
+
