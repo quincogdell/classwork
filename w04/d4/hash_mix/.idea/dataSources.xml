@@ -1,23 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="4206104718">
-    <data-source source="LOCAL" name="Rails hash_mix: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="5395e892-66df-4386-ab52-78a4f5836e82">
+  <component name="DataSourceManagerImpl" format="xml" hash="3783193646">
+    <data-source source="LOCAL" name="Rails hash_mix: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="e0fa507b-e011-4711-98f2-dd6b78c8a7b8">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/&lt;%= File.basename(Rails.root) %&gt;_development</jdbc-url>
       <user-name>&lt;%= ENV['PG_USERNAME'] %&gt;</user-name>
-      <libraries />
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar!/</url>
+        </library>
+      </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails hash_mix: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="0244cf9a-7f50-4bbe-9e4e-3fb5ee0e5065">
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:&lt;%= File.basename(Rails.root) %&gt;_production</jdbc-url>
-      <user-name>&lt;%= ENV['PG_USERNAME'] %&gt;</user-name>
-      <libraries />
-    </data-source>
-    <data-source source="LOCAL" name="Rails hash_mix: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="ac528741-b160-4cb0-b0bf-5f6584a91033">
+    <data-source source="LOCAL" name="Rails hash_mix: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="a97c1733-7c22-49f4-9e84-2d6fed7690fe">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/&lt;%= File.basename(Rails.root) %&gt;_test</jdbc-url>
       <user-name>&lt;%= ENV['PG_USERNAME'] %&gt;</user-name>
-      <libraries />
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails hash_mix: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="2532f42f-8225-422a-9bfd-9cadcd14f1f0">
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:&lt;%= File.basename(Rails.root) %&gt;_production</jdbc-url>
+      <user-name>&lt;%= ENV['PG_USERNAME'] %&gt;</user-name>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar!/</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>
