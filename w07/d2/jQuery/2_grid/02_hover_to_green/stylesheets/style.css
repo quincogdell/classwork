@@ -1,0 +1,13 @@
+.tile {
+  display: inline-block;
+
+  border-style: solid;
+  border-left-width: 1px;
+  border-color: white;
+  background-color: #ededed;
+}
+
+/*NEW: this was create*/
+.highlighted {
+  background-color: #79ed47;
+}

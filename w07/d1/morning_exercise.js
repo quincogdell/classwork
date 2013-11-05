@@ -35,19 +35,44 @@ function serialize(obj) {
   for (property in obj){
     //this skips properties on the prototype
     if (obj.hasOwnProperty(property)){
-    k = encodeURIComponent(property);
-    v = encodeURIComponent(obj[property]);
-    pair = k + "=" + v;
-    serialized.push(pair);
-   }
+      k = encodeURIComponent(property);
+      v = encodeURIComponent(obj[property]);
+      pair = k + "=" + v;
+      serialized.push(pair);
+    }
   }
   return serialized.join("&");
 }
 
-var theLoneliestMonk = {name: 'Thelonius Monk', occupation: 'composer'};
-var test = serialize(theLoneliestMonk);
-console.log(test);
-//"name=Thelonius%20Monk&occupation=composer"
+
+function $hasClass(elem, klass) {
+  klass = klass.toLowerCase();
+  klassArray = elem.className.toLowerCase().split(" ");
+  return klassArray.indexOf(klass) != -1;
+}
+
+
+// function getSiblings(elem) {
+//   //elemArray = elem.parentElement.children
+//   //eArray = new Array();
+
+// }
+
+
+
+
+
+var testElement = $('#one');
+var testhasClass = $hasClass(testElement, 'red')
+
+console.log(testhasClass);
+var testhasClass = $hasClass(testElement, 'blue')
+console.log(testhasClass);
+
+// var theLoneliestMonk = {name: 'Thelonius Monk', occupation: 'composer'};
+// var test = serialize(theLoneliestMonk);
+// console.log(test);
+
 
 
 

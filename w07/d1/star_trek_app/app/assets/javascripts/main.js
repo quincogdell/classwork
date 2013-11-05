@@ -19,9 +19,8 @@ enterprise.addEventListener('dblclick', fnDblClickEnterprise);
 var vulcanPlanet = document.getElementById("vulcan");
 vulcanPlanet.addEventListener('dblclick', fnDblClickVulcanPlanet);
 
-function fnDblClickVulcan() {
-  // var form = new FormData();
-  // form.append("refugee[:name]", this.id);
+function fnDblClickVulcan(e) {
+  e.stopPropagation();
   var vName = this.id
   var refugee;
   var data = {
