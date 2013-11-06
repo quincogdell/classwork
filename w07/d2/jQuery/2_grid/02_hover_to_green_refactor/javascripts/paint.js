@@ -24,6 +24,4 @@ Paint.addEventListeners = function($tile) {
   $tile.on("mouseout", function(e){
     $tile.removeClass("highlighted")
   });
-
-
 }
